@@ -16,9 +16,15 @@ This project predicts house prices in Bengaluru using regression models. The wor
 
 ## Results
 
-- **Linear Regression** provided a baseline prediction.
-- **Lasso Regression** reduced overfitting and improved generalization.
-- **Decision Tree Regressor** captured complex patterns but required careful tuning.
+| Model                   | R² Score  | Best Parameters                                         |
+|-------------------------|-----------|--------------------------------------------------------|
+| Linear Regression (LR)  | 0.895912  | {'fit_intercept': True}                                |
+| Lasso Regression        | 0.895939  | {'alpha': 0.001, 'max_iter': 1000}                    |
+| Decision Tree Regressor | 0.860577  | {'max_depth': 20, 'min_samples_leaf': 1, ...}        |
+
+- **Linear Regression** provided a solid baseline prediction.
+- **Lasso Regression** slightly improved the R² while reducing overfitting.
+- **Decision Tree Regressor** captured non-linear relationships but had slightly lower generalization.
 
 ## Future Work
 
